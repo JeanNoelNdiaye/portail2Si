@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "portail2Si"
+    }
+  },
+  "defaultProject": "portail2Si",
+  "cli": {
+    "analytics": "63b67845-cc25-4932-9484-155846585c51"
+  }
 }
