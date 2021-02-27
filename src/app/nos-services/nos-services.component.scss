@@ -1,0 +1,52 @@
+.how-section1{
+  margin-top:-15%;
+  padding: 10%;
+}
+.how-section1 h4{
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 30px;
+}
+.how-section1 .subheading{
+  color: #3931af;
+  font-size: 20px;
+}
+.how-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img
+{
+  text-align: center;
+}
+.how-img img{
+  width: 50%;
+}
+.rounded-circle-loc{
+  border-radius:100% !important
+}
+.circular {
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+
+}
+#bgM {
+  background: url('../../assets/images/demo/marche-public.jpg') no-repeat;
+  background-size: cover;
+}
+#bgB {
+  background: url('../../assets/images/demo/bus-tata-louga-2.jpg') no-repeat;
+  background-size: cover;
+}
+#bgT {
+  background: url('../../assets/images/demo/bus-ticket-content.jpg') no-repeat;
+  background-size: cover;
+}
+.paraserv {
+  color: #ffffff;
+  font-size: 17px;
+}

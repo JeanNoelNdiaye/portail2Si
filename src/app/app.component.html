@@ -1,3 +1,4 @@
+
 <!-- Top Background Image Wrapper -->
 <div class="bgded overlay" >
  <div class="wrapper row0">
@@ -43,13 +44,13 @@
               <li><a href="pages/sidebar-right.html">Les Références</a></li>
             </ul>
           </li>
-          <li><a class="drop" href="#">Services</a>
+          <li><a class="drop" routerLink="/nos-services" routerLinkActive="active">Services</a>
             <ul>
-              <li><a href="#">MARCHES PUBLIQUES</a></li>
-              <li><a class="drop" href="#">TRANSPORTS</a>
+              <li><a routerLink="/service-marche-public" routerLinkActive="active">MARCHES PUBLICS</a></li>
+              <li><a class="drop">TRANSPORTS</a>
                 <ul>
-                  <li><a href="#">Ticketing(gestion abonnement, gestion de la répartition)</a></li>
-                  <li><a href="#">Gestion d’un Bus</a></li>
+                  <li><a routerLink="/service-ticketing" routerLinkActive="active">Ticketing (gestion abonnement, gestion de la répartition)</a></li>
+                  <li><a routerLink="/service-gestion-bus" routerLinkActive="active">Gestion d’un Bus</a></li>
                </ul>
               </li>
             </ul>
@@ -103,11 +104,12 @@
 
 
 
+<router-outlet></router-outlet>
 
-
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+<!--
 <div class="wrapper row3">
   <main class="hoc container clear">
     <div class="row">
@@ -185,8 +187,8 @@
     </div>
   </main>
 </div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+&lt;!&ndash; ################################################################################################ &ndash;&gt;
+&lt;!&ndash; ################################################################################################ &ndash;&gt;
 
 
 
@@ -205,6 +207,7 @@
   <p> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
   <div class="clearfix"></div>
 </div>
+-->
 
 
 
@@ -259,3 +262,4 @@
     </div>
   </footer>
 </div>
+
