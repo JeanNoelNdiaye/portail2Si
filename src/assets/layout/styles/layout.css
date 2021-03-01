@@ -576,6 +576,12 @@ table a, #comments a{background-color:inherit;}
   width: 90px;
 }
 .btmspace-80 {
-  padding-top: 30px
+  padding-bottom: 30px
+}
+.motd_quarter{
+  display:block;
+  float:none;
+  width:auto;
+  margin:0 0 30px 0;
 }
 

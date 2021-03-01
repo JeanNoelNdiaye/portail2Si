@@ -3,7 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { AssistanceComponent } from './assistance/assistance.component';
+import {HeaderComponent} from './layouts/header/header.component';
+import {FooterComponent} from './layouts/footer/footer.component';
+
 
 
 import { NosServicesComponent } from './nos-services/nos-services.component';
@@ -12,17 +16,25 @@ import { ServiceMarchePublicComponent } from './nos-services/service-marche-publ
 import { ServiceTicketingComponent } from './nos-services/service-ticketing/service-ticketing.component';
 import { ServiceGestionBusComponent } from './nos-services/service-gestion-bus/service-gestion-bus.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
     AssistanceComponent,
 
-    AppComponent,
+
     NosServicesComponent,
     AccueilComponent,
     ServiceMarchePublicComponent,
     ServiceTicketingComponent,
     ServiceGestionBusComponent
+    ServiceGestionBusComponent,
+    AssistanceComponent,
+    AccueilComponent,
+    HeaderComponent,
+    FooterComponent
+
   ],
   imports: [
     BrowserModule,
