@@ -7,6 +7,7 @@ import {ServiceGestionBusComponent} from './nos-services/service-gestion-bus/ser
 import {ServiceMarchePublicComponent} from './nos-services/service-marche-public/service-marche-public.component';
 import {ServiceTicketingComponent} from './nos-services/service-ticketing/service-ticketing.component';
 import {MessageVisiteurComponent} from './assistance/message-visiteur/message-visiteur.component';
+import {NospartenairesComponent} from './apropos/nospartenaires/nospartenaires.component';
 
 
 
@@ -45,6 +46,10 @@ const routes: Routes = [
     path: 'message-visiteur',
     component: MessageVisiteurComponent,
   },
+    {
+      path: 'nospartenaires',
+      component: NospartenairesComponent,
+    },
 ];
 
 @NgModule({
