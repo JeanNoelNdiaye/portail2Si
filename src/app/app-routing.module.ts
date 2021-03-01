@@ -6,6 +6,7 @@ import {AccueilComponent} from './accueil/accueil.component';
 import {ServiceGestionBusComponent} from './nos-services/service-gestion-bus/service-gestion-bus.component';
 import {ServiceMarchePublicComponent} from './nos-services/service-marche-public/service-marche-public.component';
 import {ServiceTicketingComponent} from './nos-services/service-ticketing/service-ticketing.component';
+import {NospartenairesComponent} from './apropos/nospartenaires/nospartenaires.component';
 
 
 
@@ -39,6 +40,10 @@ const routes: Routes = [
     {
       path: 'service-marche-public',
       component: ServiceMarchePublicComponent,
+    },
+    {
+      path: 'nospartenaires',
+      component: NospartenairesComponent,
     },
 ];
 

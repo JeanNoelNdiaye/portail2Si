@@ -13,6 +13,11 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ServiceMarchePublicComponent } from './nos-services/service-marche-public/service-marche-public.component';
 import { ServiceTicketingComponent } from './nos-services/service-ticketing/service-ticketing.component';
 import { ServiceGestionBusComponent } from './nos-services/service-gestion-bus/service-gestion-bus.component';
+import { AproposComponent } from './apropos/apropos.component';
+import { PrixdistinctionsComponent } from './apropos/prixdistinctions/prixdistinctions.component';
+import { NosproduitsComponent } from './apropos/nosproduits/nosproduits.component';
+import { NospartenairesComponent } from './apropos/nospartenaires/nospartenaires.component';
+import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { ServiceGestionBusComponent } from './nos-services/service-gestion-bus/s
     AssistanceComponent,
     AccueilComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AproposComponent,
+    PrixdistinctionsComponent,
+    NosproduitsComponent,
+    NospartenairesComponent,
+    LesreferencesComponent
 
   ],
   imports: [
