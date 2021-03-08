@@ -21,6 +21,7 @@ import { NosproduitsComponent } from './apropos/nosproduits/nosproduits.componen
 import { NospartenairesComponent } from './apropos/nospartenaires/nospartenaires.component';
 import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.component';
 import { MessageVisiteurComponent } from './assistance/message-visiteur/message-visiteur.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { MessageVisiteurComponent } from './assistance/message-visiteur/message-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
