@@ -5,20 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NosServicesComponent } from './nos-services/nos-services.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import { ServiceMarchePublicComponent } from './nos-services/service-marche-public/service-marche-public.component';
-import { ServiceTicketingComponent } from './nos-services/service-ticketing/service-ticketing.component';
-import { ServiceGestionBusComponent } from './nos-services/service-gestion-bus/service-gestion-bus.component';
+import { ServiceEsigmapComponent } from './nos-services/service-esigmap/service-esigmap.component';
+import { ServiceEticketingComponent } from './nos-services/service-eticketing/service-eticketing.component';
+import { ServiceEtransportComponent } from './nos-services/service-etransport/service-etransport.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NosServicesComponent,
     AccueilComponent,
-    ServiceMarchePublicComponent,
-    ServiceTicketingComponent,
-    ServiceGestionBusComponent
+    ServiceEsigmapComponent,
+    ServiceEticketingComponent,
+    ServiceEtransportComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],
