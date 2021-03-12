@@ -21,7 +21,9 @@ import { NosproduitsComponent } from './apropos/nosproduits/nosproduits.componen
 import { NospartenairesComponent } from './apropos/nospartenaires/nospartenaires.component';
 import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.component';
 import { MessageVisiteurComponent } from './assistance/message-visiteur/message-visiteur.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
+import { FAQComponent } from './assistance/faq/faq.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import {FormsModule} from "@angular/forms";
     PrixdistinctionsComponent,
     NosproduitsComponent,
     NospartenairesComponent,
-    LesreferencesComponent
+    LesreferencesComponent,
+    FAQComponent,
 
   ],
   imports: [
