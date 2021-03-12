@@ -3,14 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import {AssistanceComponent} from './assistance/assistance.component';
 import {NosServicesComponent} from './nos-services/nos-services.component';
 import {AccueilComponent} from './accueil/accueil.component';
-import {ServiceGestionBusComponent} from './nos-services/service-gestion-bus/service-gestion-bus.component';
-import {ServiceMarchePublicComponent} from './nos-services/service-marche-public/service-marche-public.component';
-import {ServiceTicketingComponent} from './nos-services/service-ticketing/service-ticketing.component';
 import {NospartenairesComponent} from './apropos/nospartenaires/nospartenaires.component';
 import {AproposComponent} from './apropos/apropos.component';
 import {LesreferencesComponent} from './apropos/lesreferences/lesreferences.component';
 import {NosproduitsComponent} from './apropos/nosproduits/nosproduits.component';
 import {PrixdistinctionsComponent} from './apropos/prixdistinctions/prixdistinctions.component';
+import {ServiceEsigmapComponent} from './nos-services/service-esigmap/service-esigmap.component';
+import {ServiceEticketingComponent} from './nos-services/service-eticketing/service-eticketing.component';
+import {ServiceEtransportComponent} from './nos-services/service-etransport/service-etransport.component';
 
 
 
@@ -33,18 +33,9 @@ const routes: Routes = [
       path: 'nos-services',
       component: NosServicesComponent,
     },
-      {
-        path: 'service-ticketing',
-        component: ServiceTicketingComponent,
-      },
-      {
-        path: 'service-gestion-bus',
-        component: ServiceGestionBusComponent,
-      },
-    {
-      path: 'service-marche-public',
-      component: ServiceMarchePublicComponent,
-    },
+    {path: 'service-esigmap', component: ServiceEsigmapComponent},
+    {path: 'service-eticketing', component: ServiceEticketingComponent},
+    {path: 'service-etransport', component: ServiceEtransportComponent},
     {
       path: 'nospartenaires',
       component: NospartenairesComponent,
