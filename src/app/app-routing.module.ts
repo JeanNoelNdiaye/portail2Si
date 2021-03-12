@@ -11,24 +11,25 @@ import {PrixdistinctionsComponent} from './apropos/prixdistinctions/prixdistinct
 import {ServiceEsigmapComponent} from './nos-services/service-esigmap/service-esigmap.component';
 import {ServiceEticketingComponent} from './nos-services/service-eticketing/service-eticketing.component';
 import {ServiceEtransportComponent} from './nos-services/service-etransport/service-etransport.component';
+import {MessageVisiteurComponent} from './assistance/message-visiteur/message-visiteur.component';
 
 
 
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'accueil',
-    pathMatch: 'full'
-  },
-  {
-    path: 'accueil',
-    component: AccueilComponent
-  },
-  {
-    path: 'assistance',
-    component: AssistanceComponent
-  },
+    {
+      path: '',
+      redirectTo: 'accueil',
+      pathMatch: 'full'
+    },
+    {
+      path: 'accueil',
+      component: AccueilComponent
+    },
+    {
+      path: 'assistance',
+      component: AssistanceComponent
+    },
     {
       path: 'nos-services',
       component: NosServicesComponent,
@@ -59,6 +60,10 @@ const routes: Routes = [
     {
       path: 'prixdistinctions',
       component: PrixdistinctionsComponent,
+    },
+    {
+      path: 'message-visiteur',
+      component: MessageVisiteurComponent,
     },
 ];
 

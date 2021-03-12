@@ -15,6 +15,8 @@ import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.co
 import {ServiceEsigmapComponent} from './nos-services/service-esigmap/service-esigmap.component';
 import {ServiceEtransportComponent} from './nos-services/service-etransport/service-etransport.component';
 import {ServiceEticketingComponent} from './nos-services/service-eticketing/service-eticketing.component';
+import {FormsModule} from '@angular/forms';
+// import { FAQComponent } from './assistance/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import {ServiceEticketingComponent} from './nos-services/service-eticketing/serv
     PrixdistinctionsComponent,
     NosproduitsComponent,
     NospartenairesComponent,
-    LesreferencesComponent
+    LesreferencesComponent,
+    // FAQComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
