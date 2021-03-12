@@ -11,6 +11,8 @@ import {AproposComponent} from './apropos/apropos.component';
 import {LesreferencesComponent} from './apropos/lesreferences/lesreferences.component';
 import {NosproduitsComponent} from './apropos/nosproduits/nosproduits.component';
 import {PrixdistinctionsComponent} from './apropos/prixdistinctions/prixdistinctions.component';
+import { RessourcesComponent } from './ressources/ressources.component';
+
 
 
 
@@ -24,6 +26,10 @@ const routes: Routes = [
   {
     path: 'accueil',
     component: AccueilComponent
+  },
+  {
+    path: 'ressources',
+    component: RessourcesComponent,
   },
   {
     path: 'assistance',
@@ -69,6 +75,7 @@ const routes: Routes = [
       path: 'prixdistinctions',
       component: PrixdistinctionsComponent,
     },
+   
 ];
 
 @NgModule({

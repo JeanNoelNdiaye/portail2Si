@@ -18,6 +18,7 @@ import { PrixdistinctionsComponent } from './apropos/prixdistinctions/prixdistin
 import { NosproduitsComponent } from './apropos/nosproduits/nosproduits.component';
 import { NospartenairesComponent } from './apropos/nospartenaires/nospartenaires.component';
 import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.component';
+import { RessourcesComponent } from './ressources/ressources.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.co
     PrixdistinctionsComponent,
     NosproduitsComponent,
     NospartenairesComponent,
-    LesreferencesComponent
+    LesreferencesComponent,
+    RessourcesComponent,
 
   ],
   imports: [
