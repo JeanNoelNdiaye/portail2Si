@@ -9,6 +9,7 @@ import {Router} from '@angular/router';
 })
 export class NosServicesComponent implements OnInit {
 eSigmap;
+eSigmapcut;
 eTransport;
 eTicketing;
 idEsigmap;
@@ -25,6 +26,7 @@ idEtransport;
     this.nosServicesService.findNosServices(this.idEsigmap).subscribe(
       (data) => {
         this.eSigmap = data;
+        this.eSigmap.description = this.eSigmap.description.substring(0, 526);
       },
         (error) => {
         console.log('Erreur recuperation de l\'objet ESigmap ');
