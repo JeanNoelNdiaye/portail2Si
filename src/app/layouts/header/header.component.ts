@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {KeycloakSecurityService} from "../../services-security/keycloak-security.service";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public serviceSecurity: KeycloakSecurityService) { }
 
   ngOnInit(): void {
   }
 
+  onLogin() {
+    this.serviceSecurity.kc.login();
+  }
+
+  onRegister() {
+    this.serviceSecurity.kc.register();
+  }
 }

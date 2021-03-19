@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {APP_INITIALIZER, NgModule} from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AssistanceComponent } from './assistance/assistance.component';
@@ -16,8 +16,12 @@ import {ServiceEsigmapComponent} from './nos-services/service-esigmap/service-es
 import {ServiceEtransportComponent} from './nos-services/service-etransport/service-etransport.component';
 import {ServiceEticketingComponent} from './nos-services/service-eticketing/service-eticketing.component';
 import {FormsModule} from '@angular/forms';
+import {KeycloakSecurityService} from "./services-security/keycloak-security.service";
 // import { FAQComponent } from './assistance/faq/faq.component';
 
+export function kcFactory(kcSecurity:KeycloakSecurityService) {
+  return ()=> kcSecurity.init()
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +47,9 @@ import {FormsModule} from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    {provide: APP_INITIALIZER, deps: [KeycloakSecurityService], useFactory: kcFactory, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
