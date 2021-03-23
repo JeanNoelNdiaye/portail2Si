@@ -23,6 +23,8 @@ import { LesreferencesComponent } from './apropos/lesreferences/lesreferences.co
 import { MessageVisiteurComponent } from './assistance/message-visiteur/message-visiteur.component';
 import {FormsModule} from '@angular/forms';
 import { FAQComponent } from './assistance/faq/faq.component';
+import { SupportTechniqueComponent } from './assistance/support-technique/support-technique.component';
+
 
 
 @NgModule({
@@ -44,6 +46,7 @@ import { FAQComponent } from './assistance/faq/faq.component';
     NospartenairesComponent,
     LesreferencesComponent,
     FAQComponent,
+    SupportTechniqueComponent,
 
   ],
   imports: [

@@ -8,6 +8,7 @@ import {ServiceMarchePublicComponent} from './nos-services/service-marche-public
 import {ServiceTicketingComponent} from './nos-services/service-ticketing/service-ticketing.component';
 import {MessageVisiteurComponent} from './assistance/message-visiteur/message-visiteur.component';
 import {NospartenairesComponent} from './apropos/nospartenaires/nospartenaires.component';
+import {SupportTechniqueComponent} from "./assistance/support-technique/support-technique.component";
 
 
 
@@ -45,6 +46,10 @@ const routes: Routes = [
   {
     path: 'message-visiteur',
     component: MessageVisiteurComponent,
+  },
+  {
+    path: 'support-technique',
+    component: SupportTechniqueComponent,
   },
     {
       path: 'nospartenaires',
