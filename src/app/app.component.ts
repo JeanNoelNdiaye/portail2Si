@@ -19,6 +19,10 @@ export class AppComponent implements OnInit{
   }
 
   onChangePwd() {
-    // this.serviceSecurity.kc.
+    this.serviceSecurity.kc.accountManagement();
+  }
+
+  isAppManager() {
+    return this.serviceSecurity.kc.hasRealmRole('app_manager')
   }
 }

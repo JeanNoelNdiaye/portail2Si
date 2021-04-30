@@ -1,38 +1,51 @@
-<div class="row">
-  <!-- IMAGES DEFILANTS -->
-   <div class="col-lg-12">
-   <section id="testimonial">
-      <div class="container01">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <div id="owl-testimonials" class="owl-carousel owl-theme">
-              <div class="item">
-                <article class="center">
-                  <img src="../assets/level1/img/photo-1.jpg"/>
-                </article>
+<div class="row" *ngIf="!serviceSecurity.kc.authenticated">
+  <div class="col-lg-12" style="background-image:url('../../assets/images/demo/backgrounds/banner.jpg');">
+    <div class="row">
+      <p></p>
+    </div>
+    <div class="row">
+<!--      <div class="row">-->
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 slider-container">
+          <!-- SLIDER -->
+          <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide">
               </div>
-              <div class="item">
-                <article class="center">
-                  <img src="../assets/level1/img/photo-2.jpg"/>
-                </article>
+              <div class="carousel-caption">
+                <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               </div>
-              <div class="item">
-                <article class="center">
-                  <img src="../assets/level1/img/photo-4.jpg"/>
-                </article>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide" >
               </div>
-              <div class="item">
-                <article class="center">
-                  <img src="../assets/level1/img/photo-5.jpg"/>
-                </article>
+              <div class="carousel-caption">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
-            </div>
-          </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              </div>
+            </ng-template>
+          </ngb-carousel>
+          <!-- END SLIDER -->
         </div>
-      </div>
-    </section>
+        <div class="col-lg-3"></div>
+<!--      </div>-->
+    </div>
+    <div class="row">
+      <p></p>
+    </div>
   </div>
-
   <!-- PRIX ET DISTINCTIONS -->
   <div class="col-lg-12">
     <div class="wrapper row3">

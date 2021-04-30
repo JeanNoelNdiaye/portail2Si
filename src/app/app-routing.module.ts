@@ -12,6 +12,8 @@ import {ServiceEsigmapComponent} from './nos-services/service-esigmap/service-es
 import {ServiceEticketingComponent} from './nos-services/service-eticketing/service-eticketing.component';
 import {ServiceEtransportComponent} from './nos-services/service-etransport/service-etransport.component';
 import {MessageVisiteurComponent} from './assistance/message-visiteur/message-visiteur.component';
+import {RessourcesComponent} from "./ressources/ressources.component";
+import {ProduitComponent} from "./administration/produit/produit.component";
 
 
 
@@ -64,6 +66,14 @@ const routes: Routes = [
     {
       path: 'message-visiteur',
       component: MessageVisiteurComponent,
+    },
+    {
+      path: 'ressources',
+      component: RessourcesComponent,
+    },
+    {
+      path: 'produits',
+      component: ProduitComponent,
     },
 ];
 

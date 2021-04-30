@@ -17,6 +17,16 @@ import {ServiceEtransportComponent} from './nos-services/service-etransport/serv
 import {ServiceEticketingComponent} from './nos-services/service-eticketing/service-eticketing.component';
 import {FormsModule} from '@angular/forms';
 import {KeycloakSecurityService} from "./services-security/keycloak-security.service";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProduitComponent } from './administration/produit/produit.component';
+import { ProduitDeleteDialogComponent } from './administration/produit/produit-delete-dialog/produit-delete-dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDividerModule} from "@angular/material/divider";
+import {MatIconModule} from "@angular/material/icon";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {ProduitUpdateComponent} from "./administration/produit/produit-update/produit-update.component";
 // import { FAQComponent } from './assistance/faq/faq.component';
 
 export function kcFactory(kcSecurity:KeycloakSecurityService) {
@@ -39,13 +49,23 @@ export function kcFactory(kcSecurity:KeycloakSecurityService) {
     NosproduitsComponent,
     NospartenairesComponent,
     LesreferencesComponent,
+    ProduitComponent,
+    ProduitDeleteDialogComponent,
+    ProduitUpdateComponent,
     // FAQComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    MatDividerModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [
     {provide: APP_INITIALIZER, deps: [KeycloakSecurityService], useFactory: kcFactory, multi: true}

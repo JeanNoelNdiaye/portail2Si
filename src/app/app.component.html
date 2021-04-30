@@ -2,7 +2,6 @@
   <div>
     <app-header></app-header>
   </div>
-
   <div >
     <div>
       <router-outlet></router-outlet>
@@ -12,48 +11,50 @@
 </div>
 
 <!--//////////////////////////////////////////////////////////////////////////////////-->
+<div *ngIf="serviceSecurity.kc.authenticated">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand logo-1" href="#">
+      LOGO
+      <!--    <img src="../assets/images/demo/backgrounds/Logo_2Si_baseline_BD.jpg"/>-->
+    </a>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark" *ngIf="serviceSecurity.kc.authenticated">
-  <!-- Brand -->
-  <a class="navbar-brand logo-1" href="#">
-    LOGO
-<!--    <img src="../assets/images/demo/backgrounds/Logo_2Si_baseline_BD.jpg"/>-->
-  </a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accueil</a>
+      </li>
 
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" >Link 3</a>
-      </div>
-    </li>
-  </ul>
-  <ul class="navbar-nav ml-auto">
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle clickable-1" id="navbardrop1" data-toggle="dropdown">
-        <span>{{serviceSecurity.kc.loadUserInfo()}}</span>
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item clickable-1" (click)="onLogout()">Deconnexion</a>
-        <a class="dropdown-item clickable-1" (click)="onChangePwd()">Changé de mot de passe</a>
-      </div>
-    </li>
-  </ul>
-</nav>
-
-
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" *ngIf="isAppManager()">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Menu
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" routerLink="/produits" >Nos Produits</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle clickable-1" id="navbardrop1" data-toggle="dropdown">
+          <span style="color: #ffeaea">{{serviceSecurity.kc.tokenParsed}}</span>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item clickable-1" (click)="onLogout()">Deconnexion</a>
+          <a class="dropdown-item clickable-1" (click)="onChangePwd()">Changé de mot de passe</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div >
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+<!--    <app-footer></app-footer>-->
+  </div>
+</div>
 
